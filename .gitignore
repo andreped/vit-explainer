@@ -1,0 +1,10 @@
+venv/
+*.jpg
+*.jpeg
+*.png
+flagged/
+*.DS_Store
+*__pycache__/
+*.vs/
+*.idea/
+gradio_cached_examples/
