@@ -48,6 +48,7 @@ class WebUI:
         saliency = np.squeeze(np.moveaxis(saliency, 1, 3))
         saliency[saliency >= 0.05] = 0.05
         saliency[saliency <= -0.05] = -0.05
+        saliency /= np.amax(np.abs(saliency))
         return saliency
     
     def run(self):
